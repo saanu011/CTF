@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1><center>Wanna Take A Ride<center></h1>
+
+<center><button onclick="typeWriter()" >I'm in</button><center>
+
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = 'Welcome!!! So u think u can win. then search for the hint.';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+
+
+
+
+<!-- this  is the hint for next round: change your url to levelup.html -->
+
+	
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
